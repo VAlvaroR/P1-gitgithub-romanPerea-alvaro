@@ -1,0 +1,20 @@
+# Configuración de los editores
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales y de registro
+*.log
+*.tmp
+
+# Dependencias y resultados de compilación
+node_modules/
+dist/
+
+# Variables locales o secretos
+.env
+.env.*
+!.env.example
