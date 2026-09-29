@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selección de rutas para descubrir espacios naturales y culturales de Andalucía.">
+    <title>Rutas de Andalucía | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="brand" href="#inicio" aria-label="Rutas de Andalucía, inicio">
+                <span class="brand-mark" aria-hidden="true">RA</span>
+                <span>Rutas de Andalucía</span>
+            </a>
+
+            <nav aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#rutas">Rutas</a></li>
+                    <li><a href="#proyecto">El proyecto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenido">
+        <section class="hero" id="inicio">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Naturaleza, cultura y patrimonio</p>
+                    <h1>Encuentra tu próxima ruta por Andalucía</h1>
+                    <p class="hero-text">
+                        Explora una pequeña selección de planes para disfrutar de la comunidad
+                        a pie, en familia o descubriendo su historia.
+                    </p>
+                    <button class="primary-button" id="discover-button" type="button">
+                        Ver las rutas
+                    </button>
+                </div>
+
+                <div class="hero-image-wrap">
+                    <img
+                        class="hero-image"
+                        src="img/paisaje-andalucia.svg"
+                        alt="Paisaje ilustrado de Andalucía con montañas, un pueblo blanco y el sol"
+                        width="720"
+                        height="520"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section class="routes-section" id="rutas" aria-labelledby="routes-title">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">Propuestas destacadas</p>
+                        <h2 id="routes-title">Elige una experiencia</h2>
+                    </div>
+
+                    <label class="filter-label" for="route-filter">
+                        Mostrar
+                        <select id="route-filter" name="route-filter">
+                            <option value="todas">Todas las rutas</option>
+                            <option value="naturaleza">Naturaleza</option>
+                            <option value="cultura">Cultura</option>
+                            <option value="familia">En familia</option>
+                        </select>
+                    </label>
+                </div>
+
+                <p class="results-message" id="results-message" aria-live="polite">
+                    Se muestran 6 rutas.
+                </p>
+
+                <div class="route-grid" id="route-grid">
+                    <article class="route-card" data-category="naturaleza">
+                        <div class="card-icon" aria-hidden="true">⛰️</div>
+                        <p class="card-category">Naturaleza</p>
+                        <h3>Caminito del Rey</h3>
+                        <p>Un recorrido por pasarelas suspendidas entre los desfiladeros de Málaga.</p>
+                        <div class="card-footer">
+                            <span>7,7 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Caminito del Rey como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="route-card" data-category="cultura">
+                        <div class="card-icon" aria-hidden="true">🏛️</div>
+                        <p class="card-category">Cultura</p>
+                        <h3>Úbeda monumental</h3>
+                        <p>Un paseo por plazas y palacios renacentistas declarados Patrimonio Mundial.</p>
+                        <div class="card-footer">
+                            <span>3,5 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Úbeda monumental como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="route-card" data-category="familia">
+                        <div class="card-icon" aria-hidden="true">🌊</div>
+                        <p class="card-category">En familia</p>
+                        <h3>Sendero de Bolonia</h3>
+                        <p>Duna, playa y restos romanos en una ruta sencilla por la costa de Cádiz.</p>
+                        <div class="card-footer">
+                            <span>4 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Sendero de Bolonia como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="route-card" data-category="naturaleza">
+                        <div class="card-icon" aria-hidden="true">🌲</div>
+                        <p class="card-category">Naturaleza</p>
+                        <h3>Sierra de Cazorla</h3>
+                        <p>Bosques, miradores y el nacimiento del Guadalquivir en el corazón de Jaén.</p>
+                        <div class="card-footer">
+                            <span>9 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Sierra de Cazorla como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="route-card" data-category="cultura">
+                        <div class="card-icon" aria-hidden="true">🌉</div>
+                        <p class="card-category">Cultura</p>
+                        <h3>Ronda histórica</h3>
+                        <p>Calles, jardines y miradores alrededor del impresionante Tajo de Ronda.</p>
+                        <div class="card-footer">
+                            <span>5 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Ronda histórica como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="route-card" data-category="familia">
+                        <div class="card-icon" aria-hidden="true">🦩</div>
+                        <p class="card-category">En familia</p>
+                        <h3>Laguna de Fuente de Piedra</h3>
+                        <p>Un recorrido accesible para observar flamencos y conocer este humedal malagueño.</p>
+                        <div class="card-footer">
+                            <span>2,8 km</span>
+                            <button class="favorite-button" type="button" aria-pressed="false">
+                                <span aria-hidden="true">♡</span>
+                                <span class="sr-only">Guardar Laguna de Fuente de Piedra como favorita</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="favorite-summary">
+                    Rutas guardadas: <strong id="favorite-count">0</strong>
+                </p>
+            </div>
+        </section>
+
+        <section class="about-section" id="proyecto" aria-labelledby="about-title">
+            <div class="container about-grid">
+                <div>
+                    <p class="eyebrow">Sobre esta web</p>
+                    <h2 id="about-title">Un proyecto pequeño con grandes posibilidades</h2>
+                </div>
+                <div>
+                    <p>
+                        Esta aplicación reúne propuestas breves para descubrir Andalucía. Se ha
+                        construido con HTML, CSS y JavaScript, sin bibliotecas externas.
+                    </p>
+                    <p>
+                        Su estructura permite incorporar nuevas rutas y funcionalidades de manera
+                        progresiva.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p>Proyecto educativo de Despliegue de Aplicaciones Web.</p>
+            <p>&copy; <span id="current-year"></span> Rutas de Andalucía</p>
+        </div>
+    </footer>
+</body>
+</html>
