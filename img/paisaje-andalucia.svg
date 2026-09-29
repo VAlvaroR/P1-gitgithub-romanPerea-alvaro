@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="520" viewBox="0 0 720 520" role="img" aria-labelledby="title description">
+  <title id="title">Paisaje de Andalucía</title>
+  <desc id="description">Ilustración de montañas, colinas, olivos, un pueblo blanco y el sol.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe5e2"/>
+      <stop offset="1" stop-color="#edf7ed"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#78a76c"/>
+      <stop offset="1" stop-color="#315f4b"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="24" fill="url(#sky)"/>
+  <circle cx="582" cy="105" r="58" fill="#f5bd58" opacity=".95"/>
+  <path d="M0 305 135 166l92 104 92-146 166 181 94-100 141 121v194H0Z" fill="#5c8272" opacity=".55"/>
+  <path d="M0 351 118 242l96 86 138-137 132 139 96-81 140 99v172H0Z" fill="#416b59" opacity=".82"/>
+  <path d="M0 385c93-42 159-45 239 1 73 43 131 38 219-5 95-47 172-38 262 2v137H0Z" fill="url(#ground)"/>
+  <path d="M0 424c116-30 194-15 289 24 94 39 176 36 267 0 65-26 113-30 164-17v89H0Z" fill="#b6bd62"/>
+  <g transform="translate(240 270)">
+    <rect x="0" y="42" width="152" height="100" rx="4" fill="#f8f3dd"/>
+    <path d="m-8 45 84-57 84 57Z" fill="#ba5d3c"/>
+    <rect x="21" y="73" width="30" height="34" rx="2" fill="#76a7ad"/>
+    <rect x="99" y="73" width="30" height="34" rx="2" fill="#76a7ad"/>
+    <rect x="62" y="91" width="29" height="51" rx="3" fill="#6b4331"/>
+    <rect x="142" y="4" width="38" height="138" rx="3" fill="#faf5df"/>
+    <path d="m136 8 25-28 25 28Z" fill="#ba5d3c"/>
+    <rect x="154" y="28" width="14" height="26" fill="#76a7ad"/>
+  </g>
+  <g fill="#244d3d">
+    <path d="M107 420h10v62h-10z"/>
+    <circle cx="92" cy="411" r="26"/>
+    <circle cx="119" cy="402" r="30"/>
+    <circle cx="138" cy="420" r="23"/>
+    <path d="M596 419h10v64h-10z"/>
+    <circle cx="582" cy="408" r="25"/>
+    <circle cx="609" cy="401" r="29"/>
+    <circle cx="628" cy="418" r="22"/>
+  </g>
+  <path d="M329 520c12-51 42-79 91-104 40-20 54-43 59-72" fill="none" stroke="#e9d69a" stroke-width="25" stroke-linecap="round"/>
+</svg>
