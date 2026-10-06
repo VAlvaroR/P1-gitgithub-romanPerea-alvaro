@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Selección de rutas para descubrir espacios naturales y culturales de Andalucía.">
-    <title>Rutas por Andalucía | Inicio</title>
+    <title>Rutas de Andalucía | Álvaro Román</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/app.js" defer></script>
 </head>
@@ -23,6 +23,7 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#rutas">Rutas</a></li>
                     <li><a href="#proyecto">El proyecto</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -188,6 +189,70 @@
                 </div>
             </div>
         </section>
+
+<section class="contact-section" id="contacto" aria-labelledby="contact-title">
+    <div class="container">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Contacto</p>
+                <h2 id="contact-title">¿Quieres ponerte en contacto con nosotros?</h2>
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Escríbenos</h3>
+
+                <p>
+                    Si tienes alguna pregunta, sugerencia o quieres recomendarnos
+                    una nueva ruta por Andalucía, puedes enviarnos un mensaje
+                    mediante el siguiente formulario.
+                    <br><br>
+                    Te responderemos en 48h laborables, si no obtienes respuesta, contacta con nosotros via WhatsApp.
+                </p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Tu nombre"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="correo@ejemplo.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="6"
+                        placeholder="Escribe aquí tu mensaje..."
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="primary-button" type="submit">
+                    Enviar mensaje
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="site-footer">
